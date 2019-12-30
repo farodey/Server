@@ -1,23 +1,26 @@
 import socket
 from select import select
 
-tasks = []
+tasks = []      # Список задач, которые готовы к выполнению
 
 to_read = {}
 to_write = {}
+
+HOST = 'localhost'
+PORT = 666
 
 
 def server():
     server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     server_socket.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
-    server_socket.bind(('localhost', 5001))
+    server_socket.bind((HOST, PORT))
     server_socket.listen()
 
     while True:
         yield 'read', server_socket
         client_socket, addr = server_socket.accept()
         print('Connection from', addr)
-        tasks.append(client(client_socket))
+        tasks.append(client(client_socket))     # Добавляем задачу(генератор)
 
 
 def client(client_socket):
@@ -29,7 +32,7 @@ def client(client_socket):
         if not request:
             break
         else:
-            response = 'Hello world\n'.encode()
+            response = request.decode().upper().encode()
             yield 'write', client_socket
             client_socket.send(response)
 
@@ -40,10 +43,10 @@ def event_loop():
     while any([tasks, to_read, to_write]):
         while not tasks:
 
-            # Мониторим сокеты
+            # Мониторим сокеты, готовые к операциям
             ready_to_read, ready_to_write, _ = select(to_read, to_write, [])
 
-            # Наполняем список задачами(генераторами)
+            # Наполняем список задачами(генераторами), которые готовы к выполнению
             for sock in ready_to_read:
                 tasks.append(to_read.pop(sock))
             for sock in ready_to_write:
@@ -64,5 +67,5 @@ def event_loop():
             print('Done!')
 
 
-tasks.append(server())
+tasks.append(server())      # Добавляем задачу(генератор)
 event_loop()
