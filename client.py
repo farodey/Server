@@ -4,6 +4,7 @@ HOST = '127.0.0.1'
 PORT = 666
 
 
+
 def main():
     while True:
         request = input('Input request: ')
