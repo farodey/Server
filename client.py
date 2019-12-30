@@ -14,6 +14,8 @@ def main():
             response = sock.recv(4096)
             print(response.decode())
             sock.close()
+        else:
+            break
 
 
 if __name__ == '__main__':
