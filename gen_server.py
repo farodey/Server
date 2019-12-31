@@ -1,7 +1,7 @@
 import socket
 from select import select
 
-tasks = []      # Список задач, которые готовы к выполнению
+tasks = []      # Список задач(генераторов), которые готовы к выполнению
 
 to_read = {}
 to_write = {}
