@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6e6fac42-a282-457a-aeb1-146bcbacc6e8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client.py" beforeDir="false" afterPath="$PROJECT_DIR$/client.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/gen_server.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen_server.py" beforeDir="false" afterPath="$PROJECT_DIR$/server.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,7 +66,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/gen_server.py" />
+      <option name="SCRIPT_NAME" value="C:\Projects\Server\server.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -134,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1577713875287</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="multithreading client">
+      <created>1577774539783</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1577774539783</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -150,13 +156,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add client.py" />
     <MESSAGE value="exit from client" />
-    <option name="LAST_COMMIT_MESSAGE" value="exit from client" />
+    <MESSAGE value="multithreading client" />
+    <option name="LAST_COMMIT_MESSAGE" value="multithreading client" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="621" y="10" key="CommitChangelistDialog2" timestamp="1577713874786">
+    <state x="621" y="10" key="CommitChangelistDialog2" timestamp="1577774539215">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="621" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1577713874786" />
+    <state x="621" y="10" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1577774539215" />
     <state x="93" y="93" width="1350" height="638" key="DiffContextDialog" timestamp="1577713540227">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -197,17 +204,17 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="630" y="134" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1577713518654" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1577713645718">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1577774556355">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1577713645718" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1577774556355" />
     <state x="523" y="192" key="com.intellij.ide.util.TipDialog" timestamp="1577774091570">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="523" y="192" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1577774091570" />
-    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1577774460200">
+    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1579423939855">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1577774460200" />
+    <state x="578" y="329" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1579423939855" />
   </component>
 </project>
